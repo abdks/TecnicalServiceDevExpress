@@ -30,8 +30,8 @@ namespace TecnicalService.Formlar
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -105,16 +105,6 @@ namespace TecnicalService.Formlar
             this.panel1.Size = new System.Drawing.Size(536, 300);
             this.panel1.TabIndex = 0;
             // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(50, 36);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(407, 54);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Toplam Ürün Sayısı";
-            // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -124,6 +114,16 @@ namespace TecnicalService.Formlar
             this.labelControl2.Size = new System.Drawing.Size(72, 51);
             this.labelControl2.TabIndex = 2;
             this.labelControl2.Text = "654";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(50, 36);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(407, 54);
+            this.labelControl1.TabIndex = 1;
+            this.labelControl1.Text = "Toplam Ürün Sayısı";
             // 
             // panel2
             // 
@@ -598,6 +598,7 @@ namespace TecnicalService.Formlar
             this.Controls.Add(this.panel1);
             this.Name = "Frmİstatistik";
             this.Text = "Frmİstatistik";
+            this.Load += new System.EventHandler(this.Frmİstatistik_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace TecnicalService.Formlar
 {
-    public partial class Frmİstatistik : Form
+    public partial class FrmMarkalar : Form
     {
-        public Frmİstatistik()
+        public FrmMarkalar()
         {
             InitializeComponent();
-        }
-        DBTeknikServisEntities db = new DBTeknikServisEntities();
-        private void Frmİstatistik_Load(object sender, EventArgs e)
-        {
-            labelControl2.Text = db.TBLUrun.Count().ToString();
         }
     }
 }
